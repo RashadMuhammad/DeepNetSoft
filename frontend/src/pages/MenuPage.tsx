@@ -6,7 +6,7 @@ import axios from "axios"
 import "./MenuPage.css"
 import type { Menu, MenuItem } from "../types"
 
-const API_URL = "http://localhost:5000/api"
+const API_URL = "https://deepnetsoft-6.onrender.com/api"
 
 const MenuPage = () => {
   const { slug } = useParams<{ slug?: string }>()

@@ -5,7 +5,7 @@ import axios from "axios"
 import "./AdminPage.css"
 import type { Menu, MenuItem } from "../types"
 
-const API_URL = "http://localhost:5000/api"
+const API_URL = "https://deepnetsoft-6.onrender.com/api"
 
 interface MenuFormData {
   name: string
