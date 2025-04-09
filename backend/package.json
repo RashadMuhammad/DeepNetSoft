@@ -4,7 +4,6 @@
   "main": "server.ts",
   "scripts": {
     "dev": "nodemon --watch src --ext ts --exec ts-node src/server.ts",
-    "install": "npm install",
     "build": "tsc"
   },
   "author": "",
