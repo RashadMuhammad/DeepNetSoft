@@ -1,0 +1,219 @@
+.admin-page {
+    padding: 40px 0;
+    min-height: calc(100vh - 70px - 300px);
+  }
+  
+  .admin-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .admin-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  
+  .admin-section {
+    background-color: var(--darker-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .admin-form {
+    margin-bottom: 30px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #222;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    color: var(--light-text);
+    font-family: inherit;
+  }
+  
+  .form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  .form-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .btn-secondary {
+    background-color: #444;
+    color: var(--light-text);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #555;
+  }
+  
+  .menu-list,
+  .menu-items-list {
+    margin-top: 20px;
+  }
+  
+  .menu-list h3,
+  .menu-items-list h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .menu-list-item,
+  .menu-item-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .menu-list-item.active {
+    border-color: var(--primary-color);
+    background-color: rgba(0, 136, 255, 0.1);
+  }
+  
+  .menu-list-item:hover,
+  .menu-item-list-item:hover {
+    border-color: var(--primary-color);
+  }
+  
+  .menu-list-content,
+  .menu-item-list-content {
+    flex: 1;
+    cursor: pointer;
+  }
+  
+  .menu-list-content h4,
+  .menu-item-list-content h4 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+  }
+  
+  .menu-list-content p,
+  .menu-item-list-content p {
+    color: var(--muted-text);
+    font-size: 0.9rem;
+  }
+  
+  .item-price {
+    color: var(--primary-color) !important;
+    font-weight: 600;
+    margin-top: 5px;
+  }
+  
+  .menu-list-actions,
+  .menu-item-list-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .btn-edit,
+  .btn-delete {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-edit {
+    background-color: #2a6496;
+    color: white;
+  }
+  
+  .btn-edit:hover {
+    background-color: #1e4b72;
+  }
+  
+  .btn-delete {
+    background-color: #d9534f;
+    color: white;
+  }
+  
+  .btn-delete:hover {
+    background-color: #c9302c;
+  }
+  
+  .edit-form-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+  }
+  
+  .edit-form-container h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .selected-menu {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #222;
+    border-radius: 4px;
+    border-left: 3px solid var(--primary-color);
+  }
+  
+  .no-items,
+  .no-menu-selected {
+    padding: 20px;
+    text-align: center;
+    color: var(--muted-text);
+    background-color: #222;
+    border-radius: 4px;
+    font-style: italic;
+  }
+  
+  .error-message {
+    padding: 10px;
+    background-color: rgba(217, 83, 79, 0.2);
+    border: 1px solid #d9534f;
+    color: #d9534f;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .admin-grid {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  }
+  
